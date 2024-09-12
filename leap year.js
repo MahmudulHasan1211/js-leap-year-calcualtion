@@ -7,4 +7,7 @@ function leapYear (year){
     }
     return 'not a leap year'
 }
-console.log(leapYear(1800))
+
+
+const count = leapYear(2024)
+console.log(count)
