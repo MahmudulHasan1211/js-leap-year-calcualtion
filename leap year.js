@@ -1,16 +1,16 @@
-function leapYear(year) {
-    if (year % 4 === 0 && year % 100 !== 0) {
+// leap year 
+function leapY(year) {
+    if (year % 100 !== 0 && year % 4 === 0){
+        console.log("leap year")
         return true
     }
-    else if (year % 400 === 0) {
+    
+    else if(year % 100 === 0 && year % 400 === 0){
+        console.log("leap year")
         return true;
     }
-    return 'not a leap year'
+    else{
+       return false
+    }
 }
-
-// indirectly value assign 
-const count = leapYear(1900)
-console.log(count)
-
-// Directly value assign
-// console.log(leapYear(1800))
+console.log(leapY(2000))
